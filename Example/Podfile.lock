@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - iOSNetBaseLib (1.0):
+    - AFNetworking
+    - JSONKit
+    - MBProgressHUD
+    - MD5Digest
+  - JSONKit (1.4)
+  - MBProgressHUD (1.0.0)
+  - MD5Digest (1.1.0)
+
+DEPENDENCIES:
+  - iOSNetBaseLib (from `../`)
+
+EXTERNAL SOURCES:
+  iOSNetBaseLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  iOSNetBaseLib: 138f961d5f6180bc88b43be666132504da62dadb
+  JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+
+PODFILE CHECKSUM: 0c1a4d61d3b0877c326c3bb537f3c8480cc314b9
+
+COCOAPODS: 1.2.0

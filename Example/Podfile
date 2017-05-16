@@ -1,0 +1,8 @@
+#use_frameworks!
+
+target 'iOSNetBaseLib_Example' do
+  pod 'iOSNetBaseLib', :path => '../'
+
+
+
+end
