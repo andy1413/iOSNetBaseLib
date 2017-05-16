@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSNetBaseLib'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'A short description of iOSNetBaseLib.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,18 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'iOSNetBaseLib/Classes/**/*'
-  
+s.exclude_files = 'iOSNetBaseLib/Classes/JSONKit.{h,m}'
+s.requires_arc = true
+
+s.subspec 'JSONKit' do |ss|
+ss.requires_arc = false
+ss.public_header_files = 'iOSNetBaseLib/Classes/JSONKit.h'
+ss.source_files = [
+'iOSNetBaseLib/Classes/JSONKit.{h,m}'
+]
+ss.compiler_flags = '-fno-objc-arc'
+end
+
   # s.resource_bundles = {
   #   'iOSNetBaseLib' => ['iOSNetBaseLib/Assets/*.png']
   # }
@@ -39,7 +50,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 s.dependency 'AFNetworking'
-s.dependency 'JSONKit'
 s.dependency 'MD5Digest'
 s.dependency 'MBProgressHUD'
 end
